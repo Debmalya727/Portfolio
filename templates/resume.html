@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+<div class="resume-container">
+
+  <!-- Header with Name and Contact -->
+  <div class="resume-header">
+    <h1>Debmalya Panda</h1>
+    <p>📍 1/15 Neelam Abasan, Rabindra Sarani, Kolkata – 700049</p>
+    <p>✉️ <a href="mailto:debmalyapanda2004@gmail.com">debmalyapanda2004@gmail.com</a>  |  📞 9073218916</p>
+    <p>🔗 <a href="http://www.linkedin.com/in/debmalya-panda-5836b2298" target="_blank">
+      linkedin.com/in/debmalya-panda-5836b2298
+    </a></p>
+  </div>
+
+  <!-- Career Objective -->
+  <section class="resume-section">
+    <h2>Career Objective</h2>
+    <p>
+      I am a passionate and dedicated 3<sup>rd</sup>-year B.Tech student specializing in Computer Science and Engineering (AI & ML), 
+      seeking opportunities to apply and expand my skills in software development, frontend/backend engineering, and emerging technologies like Web3. 
+      With a strong foundation in programming, problem-solving, and modern web technologies, I aim to contribute to innovative projects 
+      while continuously growing as a developer and team player in a dynamic and challenging work environment.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section class="resume-section">
+    <h2>Education</h2>
+    <table class="resume-table">
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Degree / Board</th>
+          <th>Year</th>
+          <th>Percentage / SGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brainware University</td>
+          <td>B.Tech CSE (AI & ML)</td>
+          <td>2026</td>
+          <td>80.11% (8.57 SGPA, 5th sem)</td>
+        </tr>
+        <tr>
+          <td>St. Stephens School</td>
+          <td>12<sup>th</sup> (ISC CISCE)</td>
+          <td>2022</td>
+          <td>78.05%</td>
+        </tr>
+        <tr>
+          <td>St. Stephens School</td>
+          <td>10<sup>th</sup> (ICSE CISCE)</td>
+          <td>2020</td>
+          <td>83.4%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="resume-section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming Languages</strong> – C, Java, Python</li>
+      <li><strong>Web Technologies</strong> – HTML, CSS, JavaScript</li>
+      <li><strong>Database Management</strong> – MySQL</li>
+    </ul>
+  </section>
+
+  <!-- Project -->
+  <section class="resume-section">
+    <h2>Project</h2>
+    <p>
+      <strong>Spam SMS Detection (Sep 2024)</strong> — Uses NLP and classification algorithms (Naïve Bayes, SVM, LSTM) to detect spam messages.
+    </p>
+  </section>
+
+  <!-- Trainings & Workshops -->
+  <section class="resume-section">
+    <h2>Trainings & Workshops</h2>
+    <ul>
+      <li>Completed 8-week online training on <strong>Core Java</strong> (26 Apr 2024)</li>
+    </ul>
+  </section>
+
+  <!-- Extra-curricular Activities -->
+  <section class="resume-section">
+    <h2>Extra-curricular Activities</h2>
+    <ul>
+      <li>
+        <strong>XIBIT Hackathon</strong> (May 2025): Built educational solutions for institutes.
+      </li>
+      <li>
+        <strong>COPS IITBHU Hackathon</strong> (24 Feb 2025): Solved mobility and traffic management problems.
+      </li>
+      <li>
+        <strong>Smart India Hackathon</strong> (Sep 2024): “Precautionary Measures for Glacial Lake Outburst Flood”.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Languages Known -->
+  <section class="resume-section">
+    <h2>Languages Known</h2>
+    <ul>
+      <li>English – Highly proficient (excellent reading, writing, and speaking)</li>
+      <li>Bengali – Fluent in reading, writing, and conversation</li>
+      <li>Hindi – Moderate reading/writing; comfortable speaking</li>
+    </ul>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="resume-section">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Watching Cricket</li>
+      <li>Trekking</li>
+      <li>Drawing</li>
+    </ul>
+  </section>
+
+  <!-- Personal Details -->
+  <section class="resume-section">
+    <h2>Personal Details</h2>
+    <ul>
+      <li><strong>Date of Birth</strong>: 07/01/2004</li>
+      <li><strong>Permanent Address</strong>: 1/15 Neelam Abasan, Rabindra Sarani, Kolkata – 700049</li>
+      <li><strong>Father’s Name</strong>: Dibyendu Bikas Panda</li>
+      <li><strong>Nationality</strong>: Indian</li>
+    </ul>
+  </section>
+
+  <!-- Desired Roles -->
+  <section class="resume-section">
+    <h2>Desired Roles</h2>
+    <p>I aspire to work as a:</p>
+    <ul>
+      <li>Software Developer</li>
+      <li>Frontend Developer</li>
+      <li>Backend Developer</li>
+      <li>Web3 Developer</li>
+    </ul>
+  </section>
+
+  <!-- Signature & Date -->
+  <section class="resume-section signature">
+    <p><strong>Signature:</strong> Debmalya Panda</p>
+    <p><strong>Date:</strong> 31/03/2025  |  <strong>Place:</strong> Kolkata</p>
+  </section>
+
+  <!-- Download Button at Bottom -->
+  <div class="download-btn">
+    <a href="{{ url_for('static', filename='Debmalya_Resume.pdf') }}" download>
+      <i class="fas fa-download"></i> Download Resume (PDF)
+    </a>
+  </div>
+
+</div>
+{% endblock %}

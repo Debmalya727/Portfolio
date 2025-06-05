@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+<div class="about-container">
+  <div class="about-box">
+    <h1>About Me</h1>
+    <p>Hello! I'm a passionate and dedicated Python developer with a strong interest in building innovative and impactful software applications. I specialize in backend development using Flask and enjoy creating web applications that solve real-world problems.</p>
+
+    <p>My journey into tech began with a curiosity for how websites and applications work behind the scenes. Over time, I developed skills in Python, HTML, CSS, JavaScript, and database technologies like MySQL and SQLite.</p>
+
+    <p>I’ve built several projects ranging from AI-powered tools to web-based platforms. Some of my notable projects include an AI-powered Smart Traffic System, a Visual Search Engine using CLIP, and NeuroBuddy, an assistive platform designed for neurodivergent individuals.</p>
+
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Science and Engineering (AI & ML)</strong><br>
+    Brainware University, 2022 - 2026</p>
+    <p><em>Relevant Coursework:</em> Data Structures, Machine Learning, DBMS, Cloud Computing</p>
+    <p><em>Skills:</em> Python, Flask, HTML, CSS, JavaScript, MySQL, Git, AI/ML Concepts</p>
+
+    <p>If you’d like to collaborate on a project or just have a chat about tech, feel free to reach out through the Contact page!</p>
+  </div>
+</div>
+
+{% endblock %}

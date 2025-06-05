@@ -1,0 +1,128 @@
+/* Base page background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  margin: 0;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* Container holding everything */
+.resume-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header section with name & contact */
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-header h1 {
+  font-size: 2.5em;
+  color: #1e90ff;
+  margin-bottom: 8px;
+}
+
+.resume-header p {
+  margin: 4px 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.resume-header a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.resume-header a:hover {
+  text-decoration: underline;
+}
+
+/* Section titles */
+h2 {
+  font-size: 1.4em;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 4px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+/* Paragraphs & lists inside sections */
+.resume-section p,
+.resume-section ul {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.resume-section ul {
+  padding-left: 1.2em;
+  margin: 0; 
+}
+
+.resume-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Education table */
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.resume-table th,
+.resume-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.resume-table th {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Signature styling */
+.signature p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 4px 0;
+  font-style: italic;
+}
+
+/* Download button container */
+.download-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Download button styling */
+.download-btn a {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn a i {
+  margin-right: 6px;
+}
+
+.download-btn a:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}

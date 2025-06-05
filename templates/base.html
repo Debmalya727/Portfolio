@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/projects">Projects</a> |
+        <a href="{{ url_for('resume') }}">Resume</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='853919-hd_1920_1080_25fps.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+
+</body>
+</html>

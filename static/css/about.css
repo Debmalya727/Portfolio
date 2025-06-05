@@ -1,0 +1,24 @@
+body{
+  overflow: hidden;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: transparent; /* Remove background to avoid the outer box look */
+  overflow: hidden;
+}
+
+.about-box {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 50px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease forwards;
+  overflow: hidden;
+}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+<div class="projects-wrapper">
+  <div class="projects-background-box">
+
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <h2>Smart Traffic Management System</h2>
+        <p>An AI-powered system that predicts and manages traffic flow using real-time data.</p>
+        <a href="https://github.com/Debmalya727/Cops-Frontend.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Visual Search Engine</h2>
+        <p>A Flask app that uses CLIP to let users search images using text or other images.</p>
+        <a href="" target="_blank">To be coming</a>
+      </div>
+
+      <div class="project-card">
+        <h2>NeuroBuddy</h2>
+        <p>An AI assistant built for neurodivergent users, with task simplification, journaling, and code explanation.</p>
+        <a href="https://github.com/Debmalya727/Bless-Backend.git" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
